@@ -1,3 +1,17 @@
-"scripts": {
-  "test": "jest --experimental-vm-modules"
+{
+  "name": "bot_discord_js",
+  "version": "1.0.0",
+  "type": "module",
+
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+
+  "scripts": {
+    "test": "jest --experimental-vm-modules"
+  }
 }
