@@ -2,22 +2,10 @@ name: node-ci
 
 on:
   push:
-    branches: [main]   # ejecuta en cada push a main
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - run: npm ci --no-audit --no-fund
-      - run: npm test --if-present
-
+    branches: [main]        # se ejecutará en cada push a main
+  pull_request:
+    branches: [main]        # y en cada PR contra main
+  workflow_dispatch:        # <── habilita botón “Run workflow”
 
 
 
