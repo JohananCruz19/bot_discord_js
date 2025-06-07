@@ -9,7 +9,7 @@ Ejemplo mínimo de bot en Discord escrito en Node.js con soporte para ECMAScript
 - **package.json**: declara dependencias y el script de pruebas con Jest.
 - **src/index.js**: crea el cliente de Discord y maneja el evento `ready`.
 - **tests/**: carpeta para las pruebas automáticas; incluye un test inicial de ejemplo.
-- **.github/.workflows/ci.yml**: flujo de CI que instala dependencias y ejecuta `npm test`.
+- **.github/workflows/ci.yml**: flujo de CI que instala dependencias y ejecuta `npm test`.
 
 ## Aspectos clave
 
